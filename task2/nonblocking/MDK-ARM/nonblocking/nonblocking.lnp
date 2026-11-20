@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"nonblocking\startup_stm32f103xb.o"
+"nonblocking\main.o"
+"nonblocking\stm32f1xx_it.o"
+"nonblocking\stm32f1xx_hal_msp.o"
+"nonblocking\stm32f1xx_hal_gpio_ex.o"
+"nonblocking\stm32f1xx_hal_tim.o"
+"nonblocking\stm32f1xx_hal_tim_ex.o"
+"nonblocking\stm32f1xx_hal.o"
+"nonblocking\stm32f1xx_hal_rcc.o"
+"nonblocking\stm32f1xx_hal_rcc_ex.o"
+"nonblocking\stm32f1xx_hal_gpio.o"
+"nonblocking\stm32f1xx_hal_dma.o"
+"nonblocking\stm32f1xx_hal_cortex.o"
+"nonblocking\stm32f1xx_hal_pwr.o"
+"nonblocking\stm32f1xx_hal_flash.o"
+"nonblocking\stm32f1xx_hal_flash_ex.o"
+"nonblocking\stm32f1xx_hal_exti.o"
+"nonblocking\system_stm32f1xx.o"
+--strict --scatter "nonblocking\nonblocking.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nonblocking.map" -o nonblocking\nonblocking.axf

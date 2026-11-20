@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"extiinterrut\startup_stm32f103xb.o"
+"extiinterrut\main.o"
+"extiinterrut\stm32f1xx_it.o"
+"extiinterrut\stm32f1xx_hal_msp.o"
+"extiinterrut\stm32f1xx_hal_gpio_ex.o"
+"extiinterrut\stm32f1xx_hal.o"
+"extiinterrut\stm32f1xx_hal_rcc.o"
+"extiinterrut\stm32f1xx_hal_rcc_ex.o"
+"extiinterrut\stm32f1xx_hal_gpio.o"
+"extiinterrut\stm32f1xx_hal_dma.o"
+"extiinterrut\stm32f1xx_hal_cortex.o"
+"extiinterrut\stm32f1xx_hal_pwr.o"
+"extiinterrut\stm32f1xx_hal_flash.o"
+"extiinterrut\stm32f1xx_hal_flash_ex.o"
+"extiinterrut\stm32f1xx_hal_exti.o"
+"extiinterrut\system_stm32f1xx.o"
+--strict --scatter "EXTIinterrut\EXTIinterrut.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTIinterrut.map" -o EXTIinterrut\EXTIinterrut.axf
